@@ -4,6 +4,11 @@ augsa = 100
 minejumi = 0
 
 while True:
+    #Pārbauda vai atbildes ir pretrunīgas, ja jā, tad izvada paziņojumu un pārtrauc ciklu.
+    if apaksa > augsa:
+        print("Sniegtās atbildes ir bijušas pretrunīgas. Spēle tiek pārtraukta.")
+        break
+    
     #Veido algoritmu minējumu veidošanai.
     minejums = (apaksa + augsa) // 2
     #Uzskaita minējumus pievienojot vienu cikla sākumā.
